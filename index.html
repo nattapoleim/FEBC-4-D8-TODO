@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <h1>To-do List</h1>
+
+      <div id="content">
+        <h2>สิ่งที่ต้องทำวันนี้</h2>
+        <form onsubmit="addTodo(event)">
+          <input type="text" name="todoText" id="todoText" placeholder="กรอกตรงนี้..." />
+          <button id="addButton" type="submit">เพิ่ม</button>
+        </form>
+
+        <ul id="todoList"></ul>
+      </div>
+      <p id="creator">By Nattapol Eiamsa-Ard</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

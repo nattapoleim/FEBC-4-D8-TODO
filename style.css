@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 4rem 0;
+}
+
+#container h1 {
+  color: #8827ff;
+}
+
+#content {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 3px 3px 10px slategray;
+}
+
+form {
+  display: flex;
+  column-gap: 10px;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#todoText {
+  flex: 1;
+  background: transparent;
+  border: none;
+  height: 30px;
+}
+
+#todoText:focus {
+  outline: 2px solid #8827ff;
+  border-radius: 2px;
+  outline-offset: 3px;
+}
+
+#addButton {
+  padding: 0 30px;
+  height: 36px;
+  background: #8827ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.7rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.todoText {
+  display: inline-block;
+}
+
+.delButton {
+  padding: 5px 30px;
+  background: #ff619e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#creator {
+  margin-top: 1rem;
+  font-size: 12px;
+  color: #d1d1d1;
+}
